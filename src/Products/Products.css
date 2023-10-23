@@ -47,3 +47,9 @@
 .bag-icon{
     color: #535353;
 }
+
+@media (max-width: 640px) {
+    .card-container{
+        margin-left: 3rem;
+    }
+}

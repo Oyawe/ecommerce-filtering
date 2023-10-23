@@ -21,3 +21,17 @@
     color: #323232;
     cursor: pointer;
 }
+
+@media (max-width: 640px){
+    .recommended-flex{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 2rem;
+    }
+    .recommended-title{
+        margin-left: 2rem;
+    }
+    .btns{
+        margin: 4px;
+    }
+}
