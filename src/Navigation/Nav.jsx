@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import "./Nav.css";
 import { FiHeart } from "react-icons/fi";
@@ -6,7 +7,7 @@ import menu from "../assets/menu.svg";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import SidebarMobile from "../Sidebar/SidebarMobile";
 
-const Nav = () => {
+const Nav = ({handlechange}) => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav>
@@ -30,7 +31,7 @@ const Nav = () => {
         </a>
       </div>
 
-      {toggle ? <SidebarMobile /> : <div className="ht"/>}
+      {toggle ? <SidebarMobile handlechange={handlechange} /> : <div className="ht"/>}
 
       <img
         src={toggle ? close : menu}

@@ -12,14 +12,14 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [query, setQuery] = useState("");
 
+  const filteredItems = products.filter((product) =>
+    product.title.toLowerCase().indexOf(query.toLowerCase() !== -1)
+  );
+
   //input filter
   const handleChange = (e) => {
     setQuery(e.target.value);
   };
-
-  const filteredItems = products.filter((product) =>
-    product.title.toLowerCase().indexOf(query.toLowerCase() !== -1)
-  );
 
   //radio filter
   const handlechange = (e) => {
@@ -50,27 +50,29 @@ function App() {
       );
     }
 
-    return filteredProducts.map(({ img, title, star, reviews, prevPrice, newPrice }) => {
-      <Card
-        key={Math.random()}
-        img={img}
-        title={title}
-        star={star}
-        reviews={reviews}
-        prevPrice={prevPrice}
-        newPrice={newPrice}
-      />;
-    });
+    return filteredProducts.map(
+      ({ img, title, star, reviews, prevPrice, newPrice, index }) => (
+        <Card
+          key={index}
+          img={img}
+          title={title}
+          star={star}
+          reviews={reviews}
+          prevPrice={prevPrice}
+          newPrice={newPrice}
+        />
+      )
+    );
   }
 
-  const result = filteredData(products, selectedCategory, query)
+  const result = filteredData(products, selectedCategory, query);
 
   return (
     <>
       <Sidebar handlechange={handlechange} />
-      <Nav />
-      <Recommended />
-      <Products />
+      <Nav query={query} handleChange={handleChange} handlechange={handlechange}/>
+      <Recommended handleClick={handleClick} />
+      <Products result={result} />
     </>
   );
 }

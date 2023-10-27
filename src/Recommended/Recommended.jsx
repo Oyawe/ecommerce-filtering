@@ -1,6 +1,6 @@
 import "./Recommended.css";
 
-const Recommended = () => {
+const Recommended = ({}) => {
   return (
     <div>
       <h2 className="recommended-title">Recommended</h2>

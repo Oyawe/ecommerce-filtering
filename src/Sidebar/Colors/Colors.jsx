@@ -4,7 +4,7 @@ import './Colors.css';
 
 const Colors = ({handlechange}) => {
   return (
-    <div>
+    <div className='ml-color'>
       <h2 className="sidebar-title">Colors</h2>
       <label className="sidebar-label-container">
         <input onChange={handlechange} type="radio" value="" name="test1" />{" "}

@@ -1,10 +1,10 @@
-import Card from "../components/Card";
+/* eslint-disable react/prop-types */
 import "./Products.css";
 
-const Products = () => {
+const Products = ({result}) => {
   return (
     <section className="card-container">
-      <Card/>
+      {result}
     </section>
   );
 };
