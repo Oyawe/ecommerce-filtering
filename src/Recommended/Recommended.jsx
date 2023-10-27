@@ -1,18 +1,19 @@
+/* eslint-disable react/prop-types */
 import "./Recommended.css";
 
-const Recommended = ({}) => {
+const Recommended = ({ handleClick }) => {
   return (
     <div>
       <h2 className="recommended-title">Recommended</h2>
       <div className="recommended-flex">
-        <button className="btns">All Products</button>
-        <button className="btns">Nike</button>
-        <button className="btns">Adidas</button>
-        <button className="btns">Puma</button>
-        <button className="btns">Vans</button>
+        <button onClick={handleClick} className="btns">All Products</button>
+        <button onClick={handleClick} value="Nike" className="btns">Nike</button>
+        <button onClick={handleClick} value="Adidas" className="btns">Adidas</button>
+        <button onClick={handleClick} value="Puma" className="btns">Puma</button>
+        <button onClick={handleClick} value="Vans" className="btns">Vans</button>
       </div>
     </div>
   );
-}
+};
 
 export default Recommended

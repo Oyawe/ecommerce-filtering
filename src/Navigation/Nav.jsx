@@ -7,7 +7,7 @@ import menu from "../assets/menu.svg";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import SidebarMobile from "../Sidebar/SidebarMobile";
 
-const Nav = ({handlechange}) => {
+const Nav = ({handlechange, handleChange}) => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav>
@@ -16,6 +16,7 @@ const Nav = ({handlechange}) => {
           type="text"
           placeholder="Enter your shoe search..."
           className="search-input"
+          onChange={handleChange}
         />
       </div>
 

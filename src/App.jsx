@@ -12,14 +12,15 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [query, setQuery] = useState("");
 
-  const filteredItems = products.filter((product) =>
-    product.title.toLowerCase().indexOf(query.toLowerCase() !== -1)
-  );
-
+  
   //input filter
   const handleChange = (e) => {
     setQuery(e.target.value);
   };
+  
+  const filteredItems = products.filter(
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase())  !== -1
+  );
 
   //radio filter
   const handlechange = (e) => {
@@ -51,9 +52,9 @@ function App() {
     }
 
     return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice, index }) => (
+      ({ img, title, star, reviews, prevPrice, newPrice }) => (
         <Card
-          key={index}
+          key={Math.random()}
           img={img}
           title={title}
           star={star}
