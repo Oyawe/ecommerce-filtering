@@ -6,6 +6,8 @@
 
 This was implemented using ` REACT Js` and `Pure CSS`.<br>I had a lot of fun designing this.<br>The site is mobile responsive.<br>The project has a very comprehendable file structure.<br> So basiclly, product items can be filtered by color, category, product name and there's also a project search funtionality.
 
+## [Check out the finished Project](https://ecommerce-filtering.netlify.app/)
+
 ### Feel free to pull or fork this project for improvements and personal use.
 
 ### Setup:
