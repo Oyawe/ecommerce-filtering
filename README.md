@@ -1,6 +1,6 @@
 # ecommerce-filtering-application
 
-[![Screenshot-2023-10-27-at-2-52-35-PM.png](https://i.postimg.cc/RV7CtTNG/Screenshot-2023-10-27-at-2-52-35-PM.png)]
+![Screenshot-2023-10-27-at-2-52-35-PM.png](https://i.postimg.cc/RV7CtTNG/Screenshot-2023-10-27-at-2-52-35-PM.png)
 
 ## Description
 
