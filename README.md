@@ -1,8 +1,25 @@
-# React + Vite
+# ecommerce-filtering-application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Screenshot-2023-10-27-at-2-52-35-PM.png](https://i.postimg.cc/RV7CtTNG/Screenshot-2023-10-27-at-2-52-35-PM.png)]
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This was implemented using ` REACT Js` and `Pure CSS`.<br>I had a lot of fun designing this.<br>The site is mobile responsive.<br>The project has a very comprehendable file structure.<br> So basiclly, product items can be filtered by color, category, product name and there's also a project search funtionality.
+
+### Feel free to pull or fork this project for improvements and personal use.
+
+### Setup:
+
+-- install node modules
+
+```sh
+npm install
+```
+
+-- run dev server
+
+```sh
+npm run dev
+```
+
+-The project loads up in your browser🌟
